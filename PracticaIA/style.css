@@ -1,0 +1,106 @@
+/* ======= ESTILO GENERAL ======= */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf6e3;
+    color: #6b4226;
+    text-align: center;
+}
+
+/* ======= MENÚ PRINCIPAL ======= */
+.menu-principal {
+    background-color: #6b4226;
+    color: #fdf6e3;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky; /* se mantiene arriba al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.menu-principal h2 {
+    margin: 5px 0;
+    font-size: 1.4em;
+    color: #ffd700;
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.menu-principal li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.menu-principal a {
+    color: #fdf6e3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+    background-color: #ffd700;
+    color: #6b4226;
+}
+
+/* ======= CABECERA ======= */
+header {
+    background-color: #d9c7b7;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 10px 0 0 0;
+    font-style: italic;
+}
+
+/* ======= SECCIÓN PRINCIPAL ======= */
+section {
+    padding: 40px 20px;
+}
+
+input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 1px solid #6b4226;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6b4226;
+    color: #fdf6e3;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5a361e;
+}
+
+/* ======= PIE DE PÁGINA ======= */
+footer {
+    background-color: #d9c7b7;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #3b2416;
+    border-top: 2px solid #6b4226;
+}

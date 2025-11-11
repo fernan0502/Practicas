@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--=========== metadatos================== -->
+	<meta charset="utf8">
+	<meta name="description" content="practicas-- html,css,ja"><!-- -->
+	<meta name="keywords" content="HTM, CSS, JavaScript"><!-- -->
+	<meta name="author" content="Fernando"><!-- -->
+	<meta http-equiv="refresh" content="10"><!-- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	
+	<!-- ==========Título e Iconos======-->
+	<title>Practicas Css </title>
+	<link rel="icon" href="../Img/Icon/HOMER01E.ico" type="image/x-icon">
+	<!--No es necesario aplicar siempre-->
+	<!--Con esta hoja de estilo se resetea el formato del browser/navegador-->
+	
+	<!-- Con esta hoja de estilo se resetea el formato del browser/Navegador -->
+	<!--<link rel="stylesheet" href="../Css/style_reset.css">-->
+	
+	<link rel="stylesheet" href="../Css/style.css"> 
+</head>
+<body class="roboto-mono-">
+	<hr>
+	<!--===  Barra de Navegacion ======= -->
+	<header>
+	<nav>
+		<a href="..\index.html">Inicio</a> | 
+		<a href="..\Pages\PracticaTexto.html">Práctica de Texto</a> | 
+		<a href="https://sites.google.com/fiec.espol.edu.ec/mi-blog-personal">Práctica de Builder (Google Site)</a> | 
+		<a href="https://tecnology-website.my.canva.site/">Práctica de Builder (Canva) </a> | 
+		<a href="..\PracticaIA\index.html">Práctica de Inteligencia Artificial</a> | 
+		<a href="..\Pages\PracticaTListas.html">Práctica de Listas</a> | 
+		<a href="..\Pages\PracticaImagenes.html">Práctica de Imágenes</a> | 
+		<a href="..\Pages\PracticaAudio.html">Práctica de Audio</a> | 
+		<a href="..\Pages\PracticaVideo.html">Práctica de Video</a> | 
+		<a href="..\Pages\PracticaTablas.html">Práctica de Tablas</a> | 
+		<a href="..\Pages\PracticaCss.html">Práctica de Css</a> | 
+		<a href="..\CopyPaste\index.html">Práctica de CopyPaste</a> | 
+		<a href="..\Pages\PracticaJavaScript.html">Práctica de Javascript</a> | 
+		<a href="..\Pages\PracticaControles.html">Práctica de Controles</a> | 
+		<a href="..\Pages\PracticaFormulario.html">Práctica de Formulario</a> | 
+		<a href="..\Pages\PracticaFormulario2.html">Práctica de Formulario-2</a> | 
+		<a href="..\Pages\PracticaMvHorizontal.html">Práctica de Menú Horizontal</a> | 
+		<a href="..\Pages\PracticaMvVertical.html">Práctica de Menú Vertical</a> | 
+		<a href="..\Pages\PracticaBootStrap.html">Práctica de BootSrap</a> | 
+		<a href="..\Pages\PracticaCrazy.html">Práctica de Crazy</a>
+	</nav>		
+	</header>
+	
+	<hr>
+	<!--===  Practicas de etiquetas de Css ======= -->
+	<main>
+		<h1 class="Titulo">Practica de CSS</h1>
+
+		<span>
+			Css nos ayuda/sirve para dar estilo y diseño a nuestra Pagina Web. <br>
+			Para aplicarlo tenemos tres opciones: <br>
+		</span>
+		<div class="comportamiento">
+			
+			<p class="caja">
+				1. En linea Código embebido<br>
+				style="color: red">Linea de estilo con Código embebido<br>
+			</p>
+			<p class="caja">
+				2.-Códig Interno -Código en la cabecera<br>
+				El código debe ir en la cabecera del file<br>
+				<!-- Debemos explicar los selectores -->
+				style<br>
+					p{<br>
+						background:blue; <br>
+					}<br>
+				style<br>
+			</p>
+			<p class="caja">
+				3.-Externo -File.css<br>
+				link rel="stylesheet" href="estilo.cc"
+			</p>
+		</div>
+		
+		<div class="comportamiento">
+			<p class="caja">
+				Modelo cajas #1:<br>
+				Todo elemento HTML se presenta en pantalla se debe de tratar como una caja.
+			</p>
+			<p class="caja">
+				Modelo cajas #2:<br>
+				Todo elemento HTML se presenta en pantalla se debe de tratar como una caja.
+			</p>
+		</div>
+		
+		<section class="Resalta">
+			<article>
+				<h4>Notas:</h4>
+				<p>
+					1.-Simepre se ejecuta de arriba hacia abajo, es decir la misma etiqueta la puede escribir dos veces y esta presentara en pantalla el ultimo efecto programador
+				</p>
+				<p >
+					2.-Tener cuidado con montar las etiquetas en el diseño
+				</p>
+				<p>
+					3.-Valida resetear antes de aplicar su diseño: Dependiendo de su diseño
+				</p>
+			</article>
+		</section>
+		
+		<span>
+			<h3>Hipervinculos</h3>
+			<hr>
+			<h5>Hipervinculos: Abrir en nueva pestaña</h5>
+			<p>
+				Atributo target="_blank": Este atributo se utiliza para especificar cómo se debe abrir el hipervínculo. Puede ser_blank,_self_parent, o cualquier nombre diferente que no sea de los cuatro mencionados, que se considera_blank para abrir en una nueva pestaña o ventana,
+				<a href="..\Pages\PracticaAudio.html" target="_blank">Abrir en una nueva pestaña </a>
+			</p>
+			<br>
+			<h5>Hipervinculos: Abrir en la misma pestaña</h5>
+			<p>
+				Para abrir un hipervínculo en la misma pestaña, se debe utilizar el atributo target="_self" en la etiqueta <a> del hipervínculo. Este atributo indica al navegador que el enlace debe abrirse en la misma pestaña donde se encuentra el hipervínculo. Por ejemplo: <a href="http://address" target="_self">Texto</a>. Sin embargo, esta técnica no es compatible con todas las versiones de Power BI, y puede requerir la inclusión de ideas similares en la plataforma para su implementación.
+				<a href="..\Pages\PracticaAudio.html" target="_self">Abrir en una nueva pestaña </a>
+			</p>
+			<br>
+			<h5>Hipervinculos: Abrir en pestaña, modo seguro</h5>
+			<p>
+				Atributo rel="noopener noreferrer": Este es el uso combinado de los atributos noopener y noreferrer, que se utilizan para mejorar la seguridad y la privacidad al abrir hipervinculos. Al usar estos atributos, se puede garantizar que los hipervinculos se abran en una nueva pestaña o ventana, proporcionando una experiencia de navegación más segura y responsable.
+				<a href="..\Pages\PracticaAudio.html" target="blank" rel="noopener noreferrer">Abrir en una nueva pestaña (Modo seguro)</a>
+			</p>
+			<br>
+		</span>
+		
+		<hr>
+		<h2>Botones con estilo</h2>
+		<h6>Evento over</h6>
+		<!--Selector 1-->
+		<button>Presioname #1</button>
+		
+		<!--Selector 2-->
+		<button class="Btn">Presioname #2</button>
+		
+		
+	</main>
+	
+	<!-- ===========Pie de Pagina============ -->
+	<footer>
+		<p>Desarrollado por Fernando</p>
+		<p >
+			<a href="dbaquech@fiec.espol.edu.ec">Correo | 
+			<a href="tel: +593978701518"> Teléfono celular
+		</p>
+		
+		<p>© 2025 - Página de practicas academicas | ESPOL</p>
+	</footer>
+</body>
+</html>

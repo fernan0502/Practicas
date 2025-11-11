@@ -1,0 +1,26 @@
+window.addEventListener("DOMContentLoaded",function() {
+	
+	const lv_textName= document.getElementById("textName");
+	lv_textName.addEventListener("click",function(){
+		alert("Probando primer evento");
+	});
+	
+	//
+	const lv_textEmail= document.getElementById("textEmail");
+	lv_textEmail.addEventListener("click",function() {
+		alert("Probando segundo evento");
+	});
+	
+	//
+	const lv_SltPais= document.getElementById("SltPais");
+	lv_SltPais.addEventListener("click",function() {
+		alert("Probando tercer evento");
+	});
+
+	
+	
+});
+
+//
+//textEmail
+//SltPais

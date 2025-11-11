@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--=========== metadatos================== -->
+	<meta charset="utf8"><!-- La escritura de caracteres especiales áéíóú ñ-->
+	<meta e="description" content="practicas-- html,css,ja"><!-- -->
+	<meta e="keywords" content="HTM, CSS, JavaScript"><!-- -->
+	<meta name="author" content="Fernando"><!-- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta http-equiv="refresh" content="10"> -->
+	<meta><!-- -->
+	<!-- ==========Título e Iconos======-->
+	<title>Practicas JavaScript </title>
+	<link rel="icon" href="../Img/Icon/MARGE00A.ico" type="image/x-icon">
+
+	
+
+
+	<!==Script Interno ==>
+	<script>
+		alert("Este es mi primer alerta en JavaScript -Interno -Antes del body");
+	</script>
+	
+
+</head>
+<body>
+	<hr>
+	<!--===  Barra de Navegacion ======= -->
+	
+	<nav>
+		<a href="..\index.html">Inicio</a> | 
+		<a href="..\Pages\PracticaTexto.html">Práctica de Texto</a> | 
+		<a href="https://sites.google.com/fiec.espol.edu.ec/mi-blog-personal">Práctica de Builder (Google Site)</a> | 
+		<a href="https://tecnology-website.my.canva.site/">Práctica de Builder (Canva) </a> | 
+		<a href="..\PracticaIA\index.html">Práctica de Inteligencia Artificial</a> | 
+		<a href="..\Pages\PracticaTListas.html">Práctica de Listas</a> | 
+		<a href="..\Pages\PracticaImagenes.html">Práctica de Imágenes</a> | 
+		<a href="..\Pages\PracticaAudio.html">Práctica de Audio</a> | 
+		<a href="..\Pages\PracticaVideo.html">Práctica de Video</a> | 
+		<a href="..\Pages\PracticaTablas.html">Práctica de Tablas</a> | 
+		<a href="..\Pages\PracticaCss.html">Práctica de Css</a> | 
+		<a href="..\CopyPaste\index.html">Práctica de CopyPaste</a> | 
+		<a href="..\Pages\PracticaJavaScript.html">Práctica de Javascript</a> | 
+		<a href="..\Pages\PracticaControles.html">Práctica de Controles</a> | 
+		<a href="..\Pages\PracticaFormulario.html">Práctica de Formulario</a> | 
+		<a href="..\Pages\PracticaFormulario2.html">Práctica de Formulario-2</a> | 
+		<a href="..\Pages\PracticaMvHorizontal.html">Práctica de Menú Horizontal</a> | 
+		<a href="..\Pages\PracticaMvVertical.html">Práctica de Menú Vertical</a> | 
+		<a href="..\Pages\PracticaBootStrap.html">Práctica de BootSrap</a> | 
+		<a href="..\Pages\PracticaCrazy.html">Práctica de Crazy</a>
+	</nav>
+	
+	
+	
+	<hr>
+	<!--===  Practicas de etiquetas de JavaScript ======= -->
+	<main>
+		<h1>Practica de JavaScript</h1>
+		<section>
+			<p>JavaScript es un lenguaje de programación que se ejecuta tanto en el FrontEnd como el BackEnd. </p>
+			<p>JavaScriot lo usamos en varios Framewors</p>
+			<ol>
+				<li>ReactJS</li>
+				<li>AngularJS</li>
+				<li>VueJS</li>
+				<li>Svel/Sveltekit</li>
+				<li>Nuxt.js</li>
+				<li>Astro</li>
+			</ol>
+		</section>
+		<hr>
+		<section>
+			<p>	
+				Para programar en JavaScript usamos nuestro conocimiento de programacion<br>
+				Variables:locales, globales, estaticas, dinamicas<br>
+				Estructuras de control: condicionales, repetitivas (if,else)<br>
+				bucles (for, while)<br>
+				Funciones<br>
+			</p>
+		</section>
+		<!-- -->
+		<section>
+			<h3>Tipos de Variables</h3>
+			<ul>
+				<li>let:locales - dentro de una funcion o bloque</li>
+				<li>var: globales - las pademos usar en cualquier parte del desarrollo</li>
+				<li>const : Son variables con valores fijos, que no puede cambiar de valor durante su ejecucion</li>
+			</ul>
+		</section>
+		<!-- -->
+		<section>
+			<h3>Tipos de Datos</h3>
+			<ul>
+				<li>String - Cadenas de texto</li>
+				<li>Number - Números enteros y decimales</li>
+				<li>Boolean - true/false</li>
+				<li>Array - Colecciones de datos</li>
+				<li>Object - Objetos con propiedades y métodos</li>
+				<li>null - Valor nulo</li>
+				<li>undefined - Variable no definida</li>
+				<li>Symbol - Identificadores únicos</li>
+			</ul>
+		</section>
+		<!-- -->
+		<section>
+			<h3>Programación en JavaScript</h3>
+			<ul>
+				<li>Condiciones: if/else</li>
+				<li>Estructuras: Switch</li>
+				<li>Ciclos/Bucles: For, while, do-while</li>
+				<li>for...of -para recorrer colecciones (arrays)</li>
+				<li>for...in -para recorrer object/dicc (clave) </li>
+			</ul>
+		</section>
+		<!-- -->
+		<section>
+			<h3>Momento -Lugar cuando se ejecuta JavaScript</h3>
+			<ul>
+				<li>Script dentro del Html- script embebdio en medio del html</li>
+				<li>Script dentro de un control - uso de los atributos en elemento hmtl - (inline events handlers)</li>
+				<li> Script al final (Antes d cerrar e; body) - Script embebido al final antes de cerrar el body - (Inline Script late)</li>
+				<li>Archivo externo (.js) - Script externo vinculado al html - (External )</li>
+				<li></li>
+			</ul>
+		</section>
+		
+		<section>
+			<h3>Prueba de ejecucion en cada momento</h3>
+			<ol>
+				<li>Script dentro del HTML - inline script early</li>
+					<script>
+						document.write("Este es mi primer mensaje generado con Document.write- dentro del body");
+					</script>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</section>
+
+		<!-- Tarea para la casa:
+			Realice la investigación de eventos programables en JavaScript dentro/relacioandos con una pagina
+			web y complete la teoria en esta página web -->
+		<section>
+		<h3>Eventos programables JavaScript dentro de una página Web</h3>
+		<ol>
+			<li><b>DOMContentLoaded</b>
+			<p>
+				<b>Definición:</b> Se dispara cuando el HTML ha sido completamente cargado y analizado, sin esperar a imágenes o estilos.<br>
+				<b>Sirve para:</b> Ejecutar código cuando el DOM ya está disponible.<br>
+				<b>Ejemplo:</b> Mostrar un mensaje al cargarse la estructura de la página.
+			</p>
+			</li>
+
+			<li><b>load</b>
+			<p>
+				<b>Definición:</b> Se ejecuta cuando la página y todos sus recursos (imágenes, scripts, estilos) han sido cargados completamente.<br>
+				<b>Sirve para:</b> Ejecutar código cuando todo el contenido visual esté listo.<br>
+				<b>Ejemplo:</b> Mostrar mensaje al terminar de cargar todo.
+			</p>
+			</li>
+
+			<li><b>unload</b>
+			<p>
+				<b>Definición:</b> Se dispara cuando el usuario abandona la página (por ejemplo, al cerrar la pestaña o ir a otro enlace).<br>
+				<b>Sirve para:</b> Guardar datos o limpiar recursos antes de salir.<br>
+				<b>Ejemplo:</b> Mostrar alerta al cerrar la página.
+			</p>
+			</li>
+
+			<li><b>beforeunload</b>
+			<p>
+				<b>Definición:</b> Se dispara justo antes de que la página se cierre o se recargue.<br>
+				<b>Sirve para:</b> Confirmar si el usuario realmente desea salir o recargar.<br>
+				<b>Ejemplo:</b> Mostrar advertencia antes de cerrar la pestaña.
+			</p>
+			</li>
+
+			<li><b>visibilitychange</b>
+			<p>
+				<b>Definición:</b> Se activa cuando la pestaña cambia de visibilidad (el usuario cambia de pestaña o vuelve).<br>
+				<b>Sirve para:</b> Pausar o reanudar animaciones o videos cuando el usuario deja de ver la página.<br>
+				<b>Ejemplo:</b> Mostrar mensaje si la pestaña está oculta o visible.
+			</p>
+			</li>
+
+			<li><b>readystatechange</b>
+			<p>
+				<b>Definición:</b> Se activa cuando cambia el estado de carga del documento (`loading`, `interactive`, `complete`).<br>
+				<b>Sirve para:</b> Detectar en qué fase de carga se encuentra el documento.<br>
+				<b>Ejemplo:</b> Mostrar el estado actual del documento en consola.
+			</p>
+			</li>
+
+			<li><b>fullscreenchange y fullscreenerror</b>
+			<p>
+				<b>Definición:</b> `fullscreenchange` se activa cuando un elemento entra o sale del modo pantalla completa.  
+				`fullscreenerror` se dispara si ocurre un error al intentar cambiar de modo.<br>
+				<b>Sirve para:</b> Controlar el estado del modo pantalla completa.<br>
+				<b>Ejemplo:</b> Cambiar a pantalla completa al presionar un botón.
+			</p>
+			</li>
+
+			<li><b>copy, cut, paste</b>
+			<p>
+				<b>Definición:</b> Se activan cuando el usuario copia, corta o pega texto en la página.<br>
+				<b>Sirve para:</b> Detectar o controlar acciones del portapapeles.<br>
+				<b>Ejemplo:</b> Mostrar mensaje cuando el usuario copia o pega algo.
+			</p>
+			</li>
+
+			<li><b>selectionchange</b>
+			<p>
+				<b>Definición:</b> Se dispara cuando cambia la selección de texto dentro del documento.<br>
+				<b>Sirve para:</b> Detectar qué texto seleccionó el usuario.<br>
+				<b>Ejemplo:</b> Mostrar el texto seleccionado en consola.
+			</p>
+			</li>
+
+			<li><b>scroll</b>
+			<p>
+				<b>Definición:</b> Se dispara cuando el usuario desplaza la página hacia arriba o abajo.<br>
+				<b>Sirve para:</b> Activar animaciones o efectos al hacer scroll.<br>
+				<b>Ejemplo:</b> Mostrar la posición de scroll en consola.
+			</p>
+			</li>
+		</ol>
+		</section>
+
+
+	</main>
+	<script>
+		alert("Este es la segunda alerta en JavaScript -Interno -Dentro del body");
+	</script>
+	
+	<!-- ===========Pie de Pagina============ -->
+	<footer>
+		<p>Desarrollado por Fernando</p>
+		<p>
+			<a href="dbaquech@fiec.espol.edu.ec">Correo | 
+			<a href="tel: +593978701518"> Teléfono celular
+		</p>
+		
+		<p>© 2025 - Página de practicas academicas | ESPOL</p>
+	</footer>
+	 
+	<!--===  Script despues del body -Interno ======= -->	
+	<script>
+		alert ("Este es la tercera alerta en JavaScript -Interno -Despues del body");
+		document.write("Este es mi segundo mensaje generado con Document.write- dentro del body");
+	</script>
+
+	<!--===  Script antes del body - File externo ======= -->
+	<script src="../Js/JavaScript.js"></script>
+</body>
+</html>

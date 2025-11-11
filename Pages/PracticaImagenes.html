@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--=========== metadatos================== -->
+	<meta charset="utf8"><!-- La escritura de caracteres especiales áéíóú ñ-->
+	<meta e="description" content="practicas-- html,css,ja"><!-- -->
+	<meta e="keywords" content="HTM, CSS, JavaScript"><!-- -->
+	<meta name="author" content="Fernando"><!-- -->
+	<meta http-equiv="refresh" content="10"><!-- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta><!-- -->
+	<!-- ==========Título e Iconos======-->
+	<title>Practicas Imagenes </title>
+	<link rel="icon" href="../Img/Icon/BURNS01C.ico" type="image/x-icon">
+</head>
+<body>
+	<hr>
+	<!--===  Barra de Navegacion ======= -->
+	
+	<nav>
+		<a href="..\index.html">Inicio</a> | 
+		<a href="..\Pages\PracticaTexto.html">Práctica de Texto</a> | 
+		<a href="https://sites.google.com/fiec.espol.edu.ec/mi-blog-personal">Práctica de Builder (Google Site)</a> | 
+		<a href="https://tecnology-website.my.canva.site/">Práctica de Builder (Canva) </a> | 
+		<a href="..\PracticaIA\index.html">Práctica de Inteligencia Artificial</a> | 
+		<a href="..\Pages\PracticaTListas.html">Práctica de Listas</a> | 
+		<a href="..\Pages\PracticaImagenes.html">Práctica de Imágenes</a> | 
+		<a href="..\Pages\PracticaAudio.html">Práctica de Audio</a> | 
+		<a href="..\Pages\PracticaVideo.html">Práctica de Video</a> | 
+		<a href="..\Pages\PracticaTablas.html">Práctica de Tablas</a> | 
+		<a href="..\Pages\PracticaCss.html">Práctica de Css</a> | 
+		<a href="..\CopyPaste\index.html">Práctica de CopyPaste</a> | 
+		<a href="..\Pages\PracticaJavaScript.html">Práctica de Javascript</a> | 
+		<a href="..\Pages\PracticaControles.html">Práctica de Controles</a> | 
+		<a href="..\Pages\PracticaFormulario.html">Práctica de Formulario</a> | 
+		<a href="..\Pages\PracticaFormulario2.html">Práctica de Formulario-2</a> | 
+		<a href="..\Pages\PracticaMvHorizontal.html">Práctica de Menú Horizontal</a> | 
+		<a href="..\Pages\PracticaMvVertical.html">Práctica de Menú Vertical</a> | 
+		<a href="..\Pages\PracticaBootStrap.html">Práctica de BootSrap</a> | 
+		<a href="..\Pages\PracticaCrazy.html">Práctica de Crazy</a>
+	</nav>		
+	
+	<hr>
+	<!--===  Practicas de etiquetas de Imagenes ======= -->
+	<main>
+		
+		<h1>Practica de Imagenes</h1>
+		<!-- ===========Frame para importar una pagina externa dentro de mi sitio============ -->
+		<iframe 
+			title="YouTube video player" 
+			width="300" 
+			height="300" 
+			src="https://vago.com/" 
+			style="border: 1px solid"></iframe>
+		
+		<!-- ===========Frame con Video de Youtube============ -->
+		<iframe 
+			width="300" 
+			height="300" 
+			src="https://www.youtube.com/embed/swzuCdzUfYg?si=XREP3GGCAI1vm3lz" 
+			title="YouTube video player" 
+			frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+		<hr>
+		<!-- ===========Etiquetas de Imagenes============ -->
+		<!-- Se debe usar alt dentro de la etiqueta img para describir en palabras la Imagen-->
+		<!-- Esta descripcion ayuda a: el SEO, Tener texto descriptivo que se usara en el momento en que la imagen no pueda ser cargada-->
+		<h3>Etiqueta IMG (Basica - Imagen local)</h3>
+		<img 
+			src="../Img/imagen1.jpg"
+			width="300px"
+			height="300px"
+			alt="Fondo"
+		>
+		<hr>
+		<h3>Etiqueta IMG (Medio - Imagen externa)</h3>
+		<img 
+			src="https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg"
+			width="300px"
+			height="300px"
+			alt="Fondo"
+		>
+		<hr>
+		<!--======== Mapeo de Imagenes ==-->
+			<img
+				src="../Img/Cloud.png"
+				alt="Red de computadoras"
+				usemap="#NubeComputadora"
+			>
+			<map name="NubeComputadora">
+				<area
+					shape="poly"
+					alt="computadora de escritorio"
+					coords="414,54,478,85,513,66,546,85,539,207,478,224,348,135,397,115,411,52"
+					href="..\Pages\PracticaCrazy.html"
+				>
+				</area>
+			</map>
+			<hr>
+			<hr>
+			<!-- ====== Imagen Reponsive ========== -->
+			<!-- El diseño responivo: pagina y contenido (Solo imágenes en esta práctica) -->
+			<!-- 1. Tener 4 imagenes -->
+			<!-- 2. Nombrar cada imagen según el tamáño que va a utilizar -->
+			<!-- 3. Redimencionar la imagen según el valor condicionado (Exito) -->
+			<h3>Imagen responsiva (Adaptable según las dimensiones de la pantalla)</h3>
+				<picture>
+					<source media="(min-width: 650px)" srcset="..\Img\imagen4p.jpg">
+					<source media="(min-width: 450px)" srcset="..\Img\imagen5p.jpg">
+					<source media="(min-width: 300px)" srcset="..\Img\imagen6p.jpg">
+					<source media="(min-width: 100px)" srcset="..\Img\imagen7p.jpg">
+					<img src="..\Img\imagen8p.jpg">
+				</picture>
+	</main>
+	
+	<!-- ===========Pie de Pagina============ -->
+	<footer>
+		<p>Desarrollado por Fernando</p>
+		<p>
+			<a href="dbaquech@fiec.espol.edu.ec">Correo | 
+			<a href="tel: +593978701518"> Teléfono celular
+		</p>
+		
+		<p>© 2025 - Página de practicas academicas | ESPOL</p>
+	</footer>
+</body>
+</html>

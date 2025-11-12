@@ -1,60 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<!-- Página principal de las practicas-->
-	<!--=========== metadatos================== -->
-	<meta charset="utf8"><!-- La escritura de caracteres especiales áéíóú ñ-->
-	<meta e="description" content="practicas-- html,css,ja"><!-- -->
-	<meta e="keywords" content="HTM, CSS, JavaScript"><!-- -->
-	<meta name="author" content="Fernando"><!-- -->
-	<meta http-equiv="refresh" content="10"><!-- -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- ==========metadatos======-->
-	<title>Practicas Derian Fernando </title>
-	<link rel="icon" href="Img/Icon/BART00C.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="author" content="Fernando Baque">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Práctico de JavaScript</title>
 </head>
-
 <body>
-	<hr>
-	<!--=== Contenido Principal ======= -->
-	<main>
-		<h2>Prácticas de HTML, CSS, JavaScript</h2>
-		<p>Este es el menu principal de acceso rapido de practicas realizadas en los talleres del P1</p>
-		<!-- Lista de las practicas por desarrollar-->
-		<ol>
-			<li><a href="Pages\PracticaTexto.html">Práctica de Texto</a></li>
-			<li><a href="https://sites.google.com/fiec.espol.edu.ec/mi-blog-personal"> Práctica de Builder (Google Site)</a></li>
-			<li><a href="https://tecnology-website.my.canva.site/">Práctica de Builder (Canva) </a></li>
-			<li><a href="PracticaIA\index.html">Práctica de Inteligencia Artificial</a></li>
-			<li><a href="Pages\PracticaTListas.html">Práctica de Listas</a></li>
-			<li><a href="Pages\PracticaImagenes.html">Práctica de Imágenes</a></li>
-			<li><a href="Pages\PracticaAudio.html">Práctica de Audio</a></li>
-			<li><a href="Pages\PracticaVideo.html">Práctica de Video</a></li>
-			<li><a href="Pages\PracticaTablas.html">Práctica de Tablas</a></li>
-			<li><a href="Pages\PracticaCss.html">Práctica de Css</a></li>
-			<li><a href="CopyPaste\index.html">Práctica de CopyPaste</a></li>
-			<li><a href="Pages\PracticaJavaScript.html">Práctica de Javascript</a></li>
-			<li><a href="Pages\PracticaControles.html">Práctica de Controles</a></li>
-			<li><a href="Pages\PracticaFormulario.html">Práctica de Formulario</a></li>
-			<li><a href="Pages\PracticaFormulario2.html">Práctica de Formulario-2</a></li>
-			<li><a href="Pages\PracticaMvHorizontal.html">Práctica de Menú Horizontal</a></li>
-			<li><a href="Pages\PracticaMvVertical.html">Práctica de Menú Vertical</a></li>
-			<li><a href="Pages\PracticaBootStrap.html">Práctica de BootSrap</a></li>
-			<li><a href="Pages\PracticaCrazy.html">Práctica de Crazy</a></li><!-- Diseño interactivo Propio "Loco -->
-		</ol>		
-	</main>
-	<hr>
-	<!-- ===========Contenido Principal============ -->
-	<footer>
-		<p>Desarrollado por Fernando</p>
-		<p>
-			<a href="dbaquech@fiec.espol.edu.ec">Correo</a> | 
-			<a href="tel: +593978701518"> Teléfono celular</a>
-		</p>
-		
-		<p>© 2025 - Página de practicas academicas | ESPOL</p>
-		<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog"><img src="https://counter1.optistats.ovh/private/contadorvisitasgratis.php?c=cs4jw5e42lwcnwbg5cyq6s2xs6dzxrm5" border="0" title="contador de visitas para blog" alt="contador de visitas para blog"></a>
-	</footer>
+    <h1>Taller Práctico de JavaScript</h1>
+    <fieldset>
+        <section id="calculadora">
+            <h2>Calculadora Interactiva</h2>
+            <label>Número 1:</label>
+            <input type="number" id="num1"><br><br>
+            <label>Número 2:</label>
+            <input type="number" id="num2"><br><br>
+
+            <button id="btnSumar">Sumar</button>
+            <button id="btnRestar">Restar</button>
+            <button id="btnMultiplicar">Multiplicar</button>
+            <button id="btnDividir">Dividir</button>
+
+            <p id="resultadoCalc">Resultado: </p>
+        </section>
+    </fieldset>
+    <hr>
+
+    <!-- =================== SECCIÓN 2: FORMULARIO =================== -->
+    <fieldset>
+        <section id="formulario">
+            <h2>Formulario de Registro</h2>
+            <form id="formRegistro">
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" required><br><br>
+
+                <label for="txtCorreo">Correo:</label>
+                <input type="email" id="txtCorreo" required><br><br>
+
+                <label for="txtContraseña">Contraseña:</label>
+                <input type="password" id="txtContraseña" required><br><br>
+
+                <label for="txtfechanac">Fecha de Nacimiento:</label>
+                <input type="date" id="txtfechanac" required><br><br>
+
+                <button type="submit">Registrar</button>
+            
+                <p id="mensajeFinal"></p>
+            </form>
+        
+        </section>
+    </fieldset>
+    <hr>
+
+    <!-- =================== SECCIÓN 3: FECHAS =================== -->
+    <fieldset>
+        <section id="fechas">
+            <h2>Cálculo de Diferencia entre Fechas</h2>
+            <label>Fecha 1:</label>
+            <input type="date" id="fecha1" name="fecha1"><br><br>
+
+            <label>Fecha 2:</label>
+            <input type="date" id="fecha2"  name="fecha2"><br><br>
+
+            <button id="btnCalcularFechas">Calcular Diferencia</button>
+
+            <p id="resultadoFechas">Diferencia en días: </p>
+        </section>
+    </fieldset>
+    <script src="javascript.js"></script>
 </body>
 </html>
